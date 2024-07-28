@@ -1,0 +1,15 @@
+{
+  "report_key": "Strategies2",
+  "last_updated_by": "",
+  "prompt": "",
+  "completion": {
+    "node_prompts": [
+      {
+        "name": "Strategies2_nodes_activeTrades",
+        "prompt": "segsegseg",
+        "completion": "{\"name\":\"activeTrades\",\"nodeType\":\"Persistent\",\"operatorType\":\"report_reference\",\"reportKey\":\"Mt4ActiveTradeSummary@dataSource\"}"
+      }
+    ],
+    "template_prompts": []
+  }
+}
