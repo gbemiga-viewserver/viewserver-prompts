@@ -1,0 +1,25 @@
+{
+  "report_key": "Basher2",
+  "last_updated_by": "",
+  "prompt": "Basher trading strategy",
+  "completion": {
+    "node_prompts": [
+      {
+        "name": "Basher2_nodes_FinalScoreColumn",
+        "prompt": "segesegs",
+        "completion": "{\"columns\":[{\"inbound_name\":\"m1_dt\",\"outbound_names\":[{\"display_name\":\"Time\",\"name\":\"DateTime\",\"order\":1,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"visible\":\"@showAllHits\",\"width\":120}]},{\"inbound_name\":\"FinalScore\",\"outbound_names\":[{\"content_type_for_display\":\"ScoreDot\",\"display_name\":\"Signal\",\"name\":\"FinalScore\",\"order\":15,\"properties\":{\"category\":\"Signal\"},\"searchable\":false,\"sortable\":true,\"width\":80}]},{\"inbound_name\":\"sumDelta\",\"outbound_names\":[{\"display_name\":\"P&L\",\"hidden\":\"@showAllHits\",\"name\":\"sumDelta\",\"order\":15,\"properties\":{\"category\":\"Trade\"},\"searchable\":false,\"sortable\":true,\"width\":80}]},{\"inbound_name\":\"deltaScore\",\"outbound_names\":[{\"content_type_for_display\":\"ScoreDot\",\"display_name\":\"Delta\",\"name\":\"deltaScore\",\"order\":15,\"properties\":{\"category\":\"Trade\"},\"searchable\":false,\"sortable\":true,\"visible\":\"@showAllHits\",\"width\":80}]},{\"inbound_name\":\"reason\",\"outbound_names\":[{\"display_name\":\"Reason\",\"name\":\"reason\",\"order\":15,\"properties\":{\"category\":\"Trade\",\"parent\":\"Delta\"},\"searchable\":false,\"sortable\":true,\"visible\":\"@showAllHits\"}]},{\"inbound_name\":\"M1FinalScore\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"M1\",\"name\":\"M1FinalScore\",\"order\":15,\"properties\":{\"category\":\"Signal\",\"parent\":\"Signal\"},\"searchable\":false,\"sortable\":true,\"width\":80}]},{\"inbound_name\":\"M5FinalScore\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"M5\",\"name\":\"M5FinalScore\",\"order\":15,\"properties\":{\"category\":\"Signal\",\"parent\":\"Signal\"},\"searchable\":false,\"sortable\":true,\"width\":80}]},{\"inbound_name\":\"M15FinalScore\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"M15\",\"name\":\"M15FinalScore\",\"order\":15,\"properties\":{\"category\":\"Signal\",\"parent\":\"Signal\"},\"searchable\":false,\"sortable\":true,\"width\":80}]},{\"inbound_name\":\"H1FinalScore\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"H1\",\"name\":\"H1FinalScore\",\"order\":15,\"properties\":{\"category\":\"Signal\",\"parent\":\"Signal\"},\"searchable\":false,\"sortable\":true,\"width\":80}]}],\"connections\":{\"in\":[\"GeneralColumns\",\"out\"]},\"mode\":\"project\",\"name\":\"FinalScoreColumn\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
+      },
+      {
+        "name": "Basher2_nodes_GeneralColumns",
+        "prompt": "erhdhdrhdrh",
+        "completion": "{\"columns\":[{\"inbound_name\":\"m5_instrument\",\"outbound_names\":[{\"content_type_for_display\":\"Ticker\",\"display_name\":\"Instrument\",\"hidden\":false,\"name\":\"keep_m5_instrument\",\"order\":2,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]},{\"inbound_name\":\"m5_bid\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"Bid\",\"hidden\":false,\"name\":\"keep_m5_bid\",\"order\":3,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]},{\"inbound_name\":\"m5_ask\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"Ask\",\"hidden\":false,\"name\":\"keep_m5_ask\",\"order\":4,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]}],\"connections\":{\"in\":[\"M15ScoreColumns\",\"out\"]},\"mode\":\"project\",\"name\":\"GeneralColumns\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
+      },
+      {
+        "name": "Basher2_nodes_SummaryGridOutput",
+        "prompt": "segsegseg",
+        "completion": "{\"columns\":[\"H1_*\",\"m5_*\",\"m1_*\",\"m15_*\",\"count2\",\"take_profit\",\"stop_loss\",\"avg_daily_range\",\"active_trade\",\"exit_price\",\"initiation_date\",\"trade_age\",\"initiation_price\",\"break_even\",\"count\",\"signal*\",\"shouldTrade*\",\"m15To1HJoinKey\",\"m1TO5JoinKey\",\"m5TO15JoinKey\",\"delta\",\"dateRank\"],\"connections\":{\"in\":[\"FinalScoreColumn\",\"out\"]},\"mode\":\"exclude\",\"name\":\"SummaryGridOutput\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
+      }
+    ],
+    "template_prompts": []
+  }
+}
