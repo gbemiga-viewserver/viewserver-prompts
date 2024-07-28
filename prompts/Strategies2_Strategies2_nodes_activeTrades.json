@@ -1,0 +1,5 @@
+{
+  "name": "Strategies2_nodes_activeTrades",
+  "prompt": "segsegseg",
+  "completion": "{\"name\":\"activeTrades\",\"nodeType\":\"Persistent\",\"operatorType\":\"report_reference\",\"reportKey\":\"Mt4ActiveTradeSummary@dataSource\"}"
+}
