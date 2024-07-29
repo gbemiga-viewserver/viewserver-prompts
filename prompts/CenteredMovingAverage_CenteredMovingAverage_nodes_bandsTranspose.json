@@ -1,0 +1,5 @@
+{
+  "name": "CenteredMovingAverage_nodes_bandsTranspose",
+  "prompt": "transpose data",
+  "completion": "{\"calculation_templates\":[{\"data_type\":\"Float64\",\"expression\":\"back(row,cols)\",\"is_static\":false,\"name\":\"lastperiodhigh\",\"target_column\":\"high\",\"window\":\"1,1\"},{\"data_type\":\"Float64\",\"expression\":\"back(row,cols)\",\"is_static\":false,\"name\":\"lastperiodlow\",\"target_column\":\"low\",\"window\":\"1,1\"},{\"data_type\":\"Float64\",\"expression\":\"triangular_moving_average(row,cols)\",\"is_static\":false,\"name\":\"@fieldtmac\",\"target_column\":\"@field\",\"window\":\"0,@noPeriods\"},{\"data_type\":\"Int64\",\"expression\":\"columns_len(row,cols)\",\"is_static\":false,\"name\":\"@fieldcolumnslen\",\"target_column\":\"@field\",\"window\":\"0,@noPeriods\"}],\"connections\":{\"in\":[\"@connections[\\\"in\\\"][0]\",\"@connections[\\\"in\\\"][1]\"]},\"key_column\":\"@keyField\",\"name\":\"bandsTranspose\",\"node_type\":\"Persistent\",\"operator_type\":\"transpose\",\"transpose_column\":\"@dateField\",\"value_columns\":[\"close\",\"high\",\"low\"]}"
+}
