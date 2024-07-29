@@ -1,0 +1,5 @@
+{
+  "name": "CenteredMovingAverage_nodes_upperLowerBandsCalc",
+  "prompt": "calc upper and lower bands",
+  "completion": "{\"column_configs\":[{\"data_type\":\"Float64\",\"expression\":\"row.@fieldtmac + 2.5 * row.@fieldavgrange\",\"name\":\"@fieldtmau\"},{\"data_type\":\"Float64\",\"expression\":\"row.@fieldtmac - 2.5 * row.@fieldavgrange\",\"name\":\"@fieldtmad\"}],\"connections\":{\"in\":[\"rangeTranspose\",\"detail\"]},\"name\":\"upperLowerBandsCalc\",\"node_type\":\"Persistent\",\"operator_type\":\"calc\"}"
+}
