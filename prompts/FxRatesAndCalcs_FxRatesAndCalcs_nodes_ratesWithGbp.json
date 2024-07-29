@@ -1,0 +1,5 @@
+{
+  "name": "FxRatesAndCalcs_nodes_ratesWithGbp",
+  "prompt": "join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date",
+  "completion": "{\"connections\":{\"left\":[\"gbpRates\",\"out\"],\"right\":[\"fxRates\",\"out\"]},\"join_col_alias\":\"date\",\"joined_cols\":[\"dt\",\"dt\"],\"left_column_prefix\":\"gbp\",\"name\":\"ratesWithGbp\",\"node_type\":\"Persistent\",\"operator_type\":\"join\",\"right_column_prefix\":\"\"}"
+}
