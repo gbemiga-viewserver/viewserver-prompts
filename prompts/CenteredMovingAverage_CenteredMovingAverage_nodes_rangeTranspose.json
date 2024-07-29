@@ -1,0 +1,5 @@
+{
+  "name": "CenteredMovingAverage_nodes_rangeTranspose",
+  "prompt": "calculate rolling average",
+  "completion": "{\"calculation_templates\":[{\"data_type\":\"Float64\",\"expression\":\"simple_moving_average(row,cols)\",\"is_static\":true,\"name\":\"@fieldavgrange\",\"target_column\":\"@fieldrange\",\"window\":\"10,@noPeriods\"}],\"connections\":{\"in\":[\"rangeCalc\",\"out\"]},\"key_column\":\"@keyField\",\"name\":\"rangeTranspose\",\"node_type\":\"Persistent\",\"operator_type\":\"transpose\",\"transpose_column\":\"@dateField\",\"value_columns\":[\"@fieldrange\"]}"
+}
