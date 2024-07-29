@@ -1,0 +1,5 @@
+{
+  "name": "FxRatesAndCalcs_nodes_calcUSDProjection",
+  "prompt": "rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest",
+  "completion": "{\"columns\":[{\"inbound_name\":\"calcUsdCurrency\",\"outbound_names\":[\"currency\"]},{\"inbound_name\":\"calcUsdRate\",\"outbound_names\":[\"rateUSD\"]},{\"inbound_name\":\"open\",\"outbound_names\":[\"rateGBP\"]},{\"inbound_name\":\"calcUsdInstrumentAndDate\",\"outbound_names\":[\"key\"]}],\"connections\":{\"in\":[\"calcUSDRates\",\"out\"]},\"mode\":\"include\",\"name\":\"calcUSDProjection\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
+}
