@@ -1,0 +1,5 @@
+{
+  "name": "FxRatesAndCalcs_nodes_gbpRates",
+  "prompt": "filter fxRates where instrument is GBPUSD",
+  "completion": "{\"connections\":{\"in\":[\"fxRates\",\"out\"]},\"expression\":\"row.instrument == \\\"GBPUSD\\\"\",\"name\":\"gbpRates\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+}
