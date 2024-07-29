@@ -1,0 +1,5 @@
+{
+  "name": "Mt4AutoTradeBem_nodes_tradingOperator",
+  "prompt": "trading operators",
+  "completion": "{\"connections\":{\"in\":[\"@connections[\\\"in\\\"][0]\",\"@connections[\\\"in\\\"][1]\"]},\"name\":\"tradingOperator\",\"node_type\":\"Persistent\",\"operator_type\":\"tradingOperator\"}"
+}
