@@ -1,5 +1,5 @@
 {
   "name": "FxRatesAndCalcs",
   "prompt": "",
-  "completion": "[\n  \"rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest\",\n  \"remove the colun source_name from finalOutputUnion\",\n  \"exclude all columns apart from key,currency,rateUSD,rateGBP\",\n  \"filter fxRates where instrument is GBPUSD\",\n  \"join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date\",\n  \"union operators finalOutputWithoutUSD with operator calcUSDProjection give the sources names withoutUSD and usd respectively\"\n]"
+  "completion": "[\"rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest\",\"remove the colun source_name from finalOutputUnion\",\"exclude all columns apart from key,currency,rateUSD,rateGBP\",\"filter fxRates where instrument is GBPUSD\",\"join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date\",\"union operators finalOutputWithoutUSD with operator calcUSDProjection give the sources names withoutUSD and usd respectively\"]"
 }
