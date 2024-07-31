@@ -1,5 +1,5 @@
 {
   "name": "TestReport",
   "prompt": "",
-  "completion": "[\"price data where high is greater than 8 and less than 6\"]"
+  "completion": "[\"select top 100 USDHKD stocks\",\"price data where high is greater than 8 and less than 6\"]"
 }
