@@ -1,0 +1,5 @@
+{
+  "name": "Strategies2_nodes_filterActiveTrades",
+  "prompt": "filter active trades for where open is greater than 1000",
+  "completion": "{\"connections\":{\"in\":[\"activeTrages\",\"out\"]},\"expression\":\"row.open > 1000\",\"name\":\"filterActiveTrades\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+}
