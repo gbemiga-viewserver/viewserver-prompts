@@ -1,5 +1,5 @@
 {
   "name": "TestReport",
   "prompt": "",
-  "completion": "[\"price data where high is greater than 8\"]"
+  "completion": "[\"price data where high is greater than 8 and less than 6\"]"
 }
