@@ -1,5 +1,5 @@
 {
   "name": "Strategies2",
   "prompt": "",
-  "completion": "[\"segsegseg\"]"
+  "completion": "[\"filter active trades for where open is greater than 1000\",\"segsegseg\"]"
 }
