@@ -1,15 +1,5 @@
 {
-  "report_key": "Basher",
-  "last_updated_by": "",
+  "name": "Basher",
   "prompt": "",
-  "completion": {
-    "node_prompts": [
-      {
-        "name": "Basher_nodes_SummaryGridOutput",
-        "prompt": "ndhdfjtfjtfj",
-        "completion": "{\"columns\":[\"H1_*\",\"m5_*\",\"m1_*\",\"m15_*\",\"count2\",\"trade_id\",\"take_profit\",\"stop_loss\",\"avg_daily_range\",\"active_trade\",\"exit_price\",\"initiation_date\",\"trade_age\",\"initiation_price\",\"break_even\",\"count\",\"signal*\",\"shouldTrade*\",\"m15To1HJoinKey\",\"m1TO5JoinKey\",\"m5TO15JoinKey\",\"delta\",\"dateRank\"],\"connections\":{\"in\":[\"FinalScoreColumn\",\"out\"]},\"mode\":\"exclude\",\"name\":\"SummaryGridOutput\",\"nodeType\":\"Persistent\",\"operatorType\":\"projection\"}"
-      }
-    ],
-    "template_prompts": []
-  }
+  "completion": "[\n  \"ndhdfjtfjtfj\"\n]"
 }
