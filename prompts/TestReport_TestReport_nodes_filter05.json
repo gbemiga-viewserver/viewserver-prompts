@@ -1,5 +1,5 @@
 {
   "name": "TestReport_nodes_filter05",
   "prompt": "price data where high is greater than 8",
-  "completion": "{\"connections\":{\"in\":[\"\",\"out\"]},\"expression\":\"\",\"name\":\"filter05\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+  "completion": "{\"connections\":{\"in\":[\"priceData\",\"out\"]},\"expression\":\"row.high > 8 and row.low < 6\",\"name\":\"filter05\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
 }
