@@ -1,0 +1,5 @@
+{
+  "name": "TestReport_nodes_priceDataUSDNOK",
+  "prompt": "select top 150 usdnok rows",
+  "completion": "{\"name\":\"priceDataUSDNOK\",\"node_type\":\"Persistent\",\"operator_type\":\"sql\",\"sql\":\"SELECT top 150 * from USDNOK_price_data\"}"
+}
