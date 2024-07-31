@@ -1,0 +1,5 @@
+{
+  "name": "TestReport_nodes_filter05",
+  "prompt": "filter reportReferenceName where bid is greater than upper limit\r\n",
+  "completion": "{\"connections\":{\"in\":[\"reportReferenceName\",\"out\"]},\"expression\":\"row.bid < @upperLimit\",\"name\":\"filter05\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+}
