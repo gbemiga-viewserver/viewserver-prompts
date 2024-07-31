@@ -1,30 +1,5 @@
 {
-  "report_key": "CenteredMovingAverage",
-  "last_updated_by": "",
+  "name": "CenteredMovingAverage",
   "prompt": "",
-  "completion": {
-    "node_prompts": [
-      {
-        "name": "CenteredMovingAverage_nodes_bandsTranspose",
-        "prompt": "transpose data",
-        "completion": "{\"calculation_templates\":[{\"data_type\":\"Float64\",\"expression\":\"back(row,cols)\",\"is_static\":false,\"name\":\"lastperiodhigh\",\"target_column\":\"high\",\"window\":\"1,1\"},{\"data_type\":\"Float64\",\"expression\":\"back(row,cols)\",\"is_static\":false,\"name\":\"lastperiodlow\",\"target_column\":\"low\",\"window\":\"1,1\"},{\"data_type\":\"Float64\",\"expression\":\"triangular_moving_average(row,cols)\",\"is_static\":false,\"name\":\"@fieldtmac\",\"target_column\":\"@field\",\"window\":\"0,@noPeriods\"},{\"data_type\":\"Int64\",\"expression\":\"columns_len(row,cols)\",\"is_static\":false,\"name\":\"@fieldcolumnslen\",\"target_column\":\"@field\",\"window\":\"0,@noPeriods\"}],\"connections\":{\"in\":[\"@connections[\\\"in\\\"][0]\",\"@connections[\\\"in\\\"][1]\"]},\"key_column\":\"@keyField\",\"name\":\"bandsTranspose\",\"node_type\":\"Persistent\",\"operator_type\":\"transpose\",\"transpose_column\":\"@dateField\",\"value_columns\":[\"close\",\"high\",\"low\"]}"
-      },
-      {
-        "name": "CenteredMovingAverage_nodes_upperLowerBandsCalc",
-        "prompt": "calc upper and lower bands",
-        "completion": "{\"column_configs\":[{\"data_type\":\"Float64\",\"expression\":\"row.@fieldtmac + 2.5 * row.@fieldavgrange\",\"name\":\"@fieldtmau\"},{\"data_type\":\"Float64\",\"expression\":\"row.@fieldtmac - 2.5 * row.@fieldavgrange\",\"name\":\"@fieldtmad\"}],\"connections\":{\"in\":[\"rangeTranspose\",\"detail\"]},\"name\":\"upperLowerBandsCalc\",\"node_type\":\"Persistent\",\"operator_type\":\"calc\"}"
-      },
-      {
-        "name": "CenteredMovingAverage_nodes_rangeCalc",
-        "prompt": "calculate range calc",
-        "completion": "{\"column_configs\":[{\"data_type\":\"Float64\",\"expression\":\"max(row.lastperiodhigh, row.@field) - min(row.lastperiodlow, row.@field)\",\"name\":\"@fieldrange\"}],\"connections\":{\"in\":[\"bandsTranspose\",\"detail\"]},\"name\":\"rangeCalc\",\"node_type\":\"Persistent\",\"operator_type\":\"calc\"}"
-      },
-      {
-        "name": "CenteredMovingAverage_nodes_rangeTranspose",
-        "prompt": "calculate rolling average",
-        "completion": "{\"calculation_templates\":[{\"data_type\":\"Float64\",\"expression\":\"simple_moving_average(row,cols)\",\"is_static\":true,\"name\":\"@fieldavgrange\",\"target_column\":\"@fieldrange\",\"window\":\"10,@noPeriods\"}],\"connections\":{\"in\":[\"rangeCalc\",\"out\"]},\"key_column\":\"@keyField\",\"name\":\"rangeTranspose\",\"node_type\":\"Persistent\",\"operator_type\":\"transpose\",\"transpose_column\":\"@dateField\",\"value_columns\":[\"@fieldrange\"]}"
-      }
-    ],
-    "template_prompts": []
-  }
+  "completion": "[\n  \"transpose data\",\n  \"calc upper and lower bands\",\n  \"calculate range calc\",\n  \"calculate rolling average\"\n]"
 }
