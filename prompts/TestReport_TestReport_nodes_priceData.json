@@ -1,0 +1,5 @@
+{
+  "name": "TestReport_nodes_priceData",
+  "prompt": "select top 100 USDHKD stocks",
+  "completion": "{\"name\":\"priceData\",\"node_type\":\"Persistent\",\"operator_type\":\"sql\",\"sql\":\"SELECT top 100 * from USDHKD_price_data\"}"
+}
