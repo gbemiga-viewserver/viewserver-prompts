@@ -1,5 +1,5 @@
 {
   "name": "CenteredMovingAverage",
   "prompt": "",
-  "completion": "[\n  \"transpose data\",\n  \"calc upper and lower bands\",\n  \"calculate range calc\",\n  \"calculate rolling average\"\n]"
+  "completion": "[\"transpose data\",\"calc upper and lower bands\",\"calculate range calc\",\"calculate rolling average\"]"
 }
