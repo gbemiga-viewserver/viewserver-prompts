@@ -1,5 +1,5 @@
 {
   "name": "TestReport",
   "prompt": "",
-  "completion": "[\"filter reportReferenceName where bid is greater than upper limit\\r\\n\"]"
+  "completion": "[\"price data where high is greater than 8\"]"
 }
