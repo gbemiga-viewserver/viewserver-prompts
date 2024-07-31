@@ -1,15 +1,5 @@
 {
-  "report_key": "TestReport",
-  "last_updated_by": "",
+  "name": "TestReport",
   "prompt": "",
-  "completion": {
-    "node_prompts": [
-      {
-        "name": "TestReport_nodes_filter05",
-        "prompt": "filter reportReferenceName where bid is greater than upper limit\r\n",
-        "completion": "{\"connections\":{\"in\":[\"reportReferenceName\",\"out\"]},\"expression\":\"row.bid < @upperLimit\",\"name\":\"filter05\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
-      }
-    ],
-    "template_prompts": []
-  }
+  "completion": "{\n  \"node_prompts\": [\n    {\n      \"name\": \"TestReport_nodes_filter05\",\n      \"prompt\": \"filter reportReferenceName where bid is greater than upper limit\\r\\n\",\n      \"completion\": \"{\\\"connections\\\":{\\\"in\\\":[\\\"reportReferenceName\\\",\\\"out\\\"]},\\\"expression\\\":\\\"row.bid < @upperLimit\\\",\\\"name\\\":\\\"filter05\\\",\\\"node_type\\\":\\\"Persistent\\\",\\\"operator_type\\\":\\\"filter\\\",\\\"rust_optimized\\\":false}\"\n    }\n  ],\n  \"template_prompts\": []\n}"
 }
