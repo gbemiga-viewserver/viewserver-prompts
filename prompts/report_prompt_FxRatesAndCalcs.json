@@ -1,40 +1,5 @@
 {
-  "report_key": "FxRatesAndCalcs",
-  "last_updated_by": "",
+  "name": "FxRatesAndCalcs",
   "prompt": "",
-  "completion": {
-    "node_prompts": [
-      {
-        "name": "FxRatesAndCalcs_nodes_calcUSDProjection",
-        "prompt": "rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest",
-        "completion": "{\"columns\":[{\"inbound_name\":\"calcUsdCurrency\",\"outbound_names\":[\"currency\"]},{\"inbound_name\":\"calcUsdRate\",\"outbound_names\":[\"rateUSD\"]},{\"inbound_name\":\"open\",\"outbound_names\":[\"rateGBP\"]},{\"inbound_name\":\"calcUsdInstrumentAndDate\",\"outbound_names\":[\"key\"]}],\"connections\":{\"in\":[\"calcUSDRates\",\"out\"]},\"mode\":\"include\",\"name\":\"calcUSDProjection\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
-      },
-      {
-        "name": "FxRatesAndCalcs_nodes_finalOutput",
-        "prompt": "remove the colun source_name from finalOutputUnion",
-        "completion": "{\"columns\":[\"source_name\"],\"connections\":{\"in\":[\"finalOutputUnion\",\"out\"]},\"mode\":\"exclude\",\"name\":\"finalOutput\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
-      },
-      {
-        "name": "FxRatesAndCalcs_nodes_finalOutputWithoutUSD",
-        "prompt": "exclude all columns apart from key,currency,rateUSD,rateGBP",
-        "completion": "{\"columns\":[\"key\",\"currency\",\"rateUSD\",\"rateGBP\"],\"connections\":{\"in\":[\"calcsForRates\",\"out\"]},\"mode\":\"include\",\"name\":\"finalOutputWithoutUSD\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
-      },
-      {
-        "name": "FxRatesAndCalcs_nodes_gbpRates",
-        "prompt": "filter fxRates where instrument is GBPUSD",
-        "completion": "{\"connections\":{\"in\":[\"fxRates\",\"out\"]},\"expression\":\"row.instrument == \\\"GBPUSD\\\"\",\"name\":\"gbpRates\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
-      },
-      {
-        "name": "FxRatesAndCalcs_nodes_ratesWithGbp",
-        "prompt": "join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date",
-        "completion": "{\"connections\":{\"left\":[\"gbpRates\",\"out\"],\"right\":[\"fxRates\",\"out\"]},\"join_col_alias\":\"date\",\"joined_cols\":[\"dt\",\"dt\"],\"left_column_prefix\":\"gbp\",\"name\":\"ratesWithGbp\",\"node_type\":\"Persistent\",\"operator_type\":\"join\",\"right_column_prefix\":\"\"}"
-      },
-      {
-        "name": "FxRatesAndCalcs_nodes_finalOutputUnion",
-        "prompt": "union operators finalOutputWithoutUSD with operator calcUSDProjection give the sources names withoutUSD and usd respectively",
-        "completion": "{\"connections\":{\"usd\":[\"calcUSDProjection\",\"out\"],\"without_u_s_d\":[\"finalOutputWithoutUSD\",\"out\"]},\"name\":\"finalOutputUnion\",\"node_type\":\"Persistent\",\"operator_type\":\"union\",\"union_elements\":[{\"additional_columns_per_source\":{},\"source_id\":\"withoutUSD\"},{\"additional_columns_per_source\":{},\"source_id\":\"usd\"}]}"
-      }
-    ],
-    "template_prompts": []
-  }
+  "completion": "[\n  \"rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest\",\n  \"remove the colun source_name from finalOutputUnion\",\n  \"exclude all columns apart from key,currency,rateUSD,rateGBP\",\n  \"filter fxRates where instrument is GBPUSD\",\n  \"join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date\",\n  \"union operators finalOutputWithoutUSD with operator calcUSDProjection give the sources names withoutUSD and usd respectively\"\n]"
 }
