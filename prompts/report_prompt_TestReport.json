@@ -3,5 +3,5 @@
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "selects the top 100 spx usd rows",
-  "completion": "[\"filter filteredDemoData where ask greater than 3\",\"select top 150 usdnok rows\",\"filter demo data where bid < 1\",\"select top 100 spx usd rows\",\"group demoData by instrument sum ask\",\"priceData2 where open is between 12800 and 12900\"]"
+  "completion": "[\"filter filteredDemoData where ask greater than 3\",\"select top 150 usdnok rows\",\"select top 100 spx usd rows\",\"group demoData by instrument sum ask\",\"priceData2 where open is between 12800 and 12900\"]"
 }
