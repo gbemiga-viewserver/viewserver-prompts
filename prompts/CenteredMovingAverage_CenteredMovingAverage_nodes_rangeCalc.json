@@ -1,5 +1,7 @@
 {
   "name": "CenteredMovingAverage_nodes_rangeCalc",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "calculate range calc",
   "completion": "{\"column_configs\":[{\"data_type\":\"Float64\",\"expression\":\"max(row.lastperiodhigh, row.@field) - min(row.lastperiodlow, row.@field)\",\"name\":\"@fieldrange\"}],\"connections\":{\"in\":[\"bandsTranspose\",\"detail\"]},\"name\":\"rangeCalc\",\"node_type\":\"Persistent\",\"operator_type\":\"calc\"}"
 }
