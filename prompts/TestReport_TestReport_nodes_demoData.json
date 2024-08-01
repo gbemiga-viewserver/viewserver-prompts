@@ -1,0 +1,7 @@
+{
+  "name": "TestReport_nodes_demoData",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
+  "prompt": "select top 1000 columns from expertOperator_4ccf6ec105e2c284e751a6ebf377c21b62d39cf18a0f94cebad046b190199d11",
+  "completion": "{\"name\":\"demoData\",\"node_type\":\"Persistent\",\"operator_type\":\"sql\",\"sql\":\"SELECT top 1000 * from expertOperator_4ccf6ec105e2c284e751a6ebf377c21b62d39cf18a0f94cebad046b190199d11\"}"
+}
