@@ -1,5 +1,7 @@
 {
   "name": "DelTestReport_nodes_filterExpertOperator",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "filter export operator where bid is greater than 50",
   "completion": "{\"connections\":{\"in\":[\"expertOperator\",\"out\"]},\"expression\":\"row.baz > row.boo\",\"name\":\"filterExpertOperator\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\"}"
 }
