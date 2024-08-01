@@ -1,5 +1,7 @@
 {
   "name": "DelTestReport_nodes_filterExperttOperator",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "filter filterExperttOperator where bundi greater than baz",
   "completion": "{\"connections\":{\"in\":[\"experttOperator\",\"out\"]},\"expression\":\"row.bundi < row.baz\",\"name\":\"filterExperttOperator\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\"}"
 }
