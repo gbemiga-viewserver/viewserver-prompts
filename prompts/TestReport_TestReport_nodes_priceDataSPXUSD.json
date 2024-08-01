@@ -1,0 +1,5 @@
+{
+  "name": "TestReport_nodes_priceDataSPXUSD",
+  "prompt": "select top 100 spx usd rows",
+  "completion": "{\"name\":\"priceDataSPXUSD\",\"node_type\":\"Persistent\",\"operator_type\":\"sql\",\"sql\":\"SELECT top 100 * from SPXUSD_price_data\"}"
+}
