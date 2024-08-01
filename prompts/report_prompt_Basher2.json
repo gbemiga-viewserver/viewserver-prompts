@@ -1,5 +1,7 @@
 {
   "name": "Basher2",
+  "stop_sequence": "#EndOfReport",
+  "prefix": "Create a report that",
   "prompt": "Basher trading strategy",
   "completion": "[\"segesegs\",\"erhdhdrhdrh\",\"segsegseg\"]"
 }
