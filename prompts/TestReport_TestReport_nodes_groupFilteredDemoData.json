@@ -1,0 +1,7 @@
+{
+  "name": "TestReport_nodes_groupFilteredDemoData",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
+  "prompt": "group filterDemoData by instrument sum open",
+  "completion": "{\"connections\":{\"in\":[\"filterDemoData\",\"out\"]},\"count_column\":\"count\",\"grouping_column_names\":[\"instrument\"],\"name\":\"groupFilteredDemoData\",\"node_type\":\"Persistent\",\"operator_type\":\"group\",\"rankings\":[],\"summaries\":[{\"function\":\"sum\",\"name\":\"sumOpen\",\"target_column\":\"open\"}]}"
+}
