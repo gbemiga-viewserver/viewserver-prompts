@@ -1,0 +1,7 @@
+{
+  "name": "TestReport_nodes_filteredDemoData",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
+  "prompt": "filter demo data where bid < 1",
+  "completion": "{\"connections\":{\"in\":[\"groupDataByInstrument\",\"out\"]},\"expression\":\"row.bid < 1\",\"name\":\"filteredDemoData\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+}
