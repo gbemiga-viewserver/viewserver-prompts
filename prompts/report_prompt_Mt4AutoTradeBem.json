@@ -1,7 +1,0 @@
-{
-  "name": "Mt4AutoTradeBem",
-  "stop_sequence": "#EndOfReport",
-  "prefix": "Create a report that",
-  "prompt": "",
-  "completion": "[\"trading operators\"]"
-}

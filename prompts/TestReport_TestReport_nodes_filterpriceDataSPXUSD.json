@@ -1,7 +1,0 @@
-{
-  "name": "TestReport_nodes_filterpriceDataSPXUSD",
-  "stop_sequence": "#EndOfFunction",
-  "prefix": "",
-  "prompt": "filter spxusd for where high is between 2029 and 2035",
-  "completion": "{\"connections\":{\"in\":[\"priceDataSPXUSD\",\"out\"]},\"expression\":\"row.high > 2029 && row.low < 2035\",\"name\":\"filterpriceDataSPXUSD\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
-}

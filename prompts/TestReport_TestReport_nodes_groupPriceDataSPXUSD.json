@@ -1,7 +1,0 @@
-{
-  "name": "TestReport_nodes_groupPriceDataSPXUSD",
-  "stop_sequence": "#EndOfFunction",
-  "prefix": "",
-  "prompt": "group PriceDataSPXUSD by open sum close",
-  "completion": "{\"connections\":{\"in\":[\"priceDataSPXUSD\",\"out\"]},\"count_column\":\"count\",\"grouping_column_names\":[\"open\"],\"name\":\"groupPriceDataSPXUSD\",\"node_type\":\"Persistent\",\"operator_type\":\"group\",\"rankings\":[],\"summaries\":[{\"function\":\"sum\",\"name\":\"sumClose\",\"target_column\":\"close\"}]}"
-}

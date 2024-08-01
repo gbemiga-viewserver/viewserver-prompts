@@ -1,7 +1,0 @@
-{
-  "name": "FxRatesAndCalcs_nodes_finalOutputWithoutUSD",
-  "stop_sequence": "#EndOfFunction",
-  "prefix": "",
-  "prompt": "exclude all columns apart from key,currency,rateUSD,rateGBP",
-  "completion": "{\"columns\":[\"key\",\"currency\",\"rateUSD\",\"rateGBP\"],\"connections\":{\"in\":[\"calcsForRates\",\"out\"]},\"mode\":\"include\",\"name\":\"finalOutputWithoutUSD\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
-}

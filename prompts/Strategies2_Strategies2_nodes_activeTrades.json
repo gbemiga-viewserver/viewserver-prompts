@@ -1,7 +1,0 @@
-{
-  "name": "Strategies2_nodes_activeTrades",
-  "stop_sequence": "#EndOfFunction",
-  "prefix": "",
-  "prompt": "segsegseg",
-  "completion": "{\"name\":\"activeTrades\",\"node_type\":\"Persistent\",\"operator_type\":\"report_reference\",\"report_key\":\"Mt4ActiveTradeSummary@dataSource\"}"
-}

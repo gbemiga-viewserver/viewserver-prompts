@@ -1,7 +1,0 @@
-{
-  "name": "DelTestReport",
-  "stop_sequence": "#EndOfReport",
-  "prefix": "Create a report that",
-  "prompt": "",
-  "completion": "[\"filter filterExperttOperator where bundi greater than baz\",\"filter export operator where bid is greater than 50\"]"
-}

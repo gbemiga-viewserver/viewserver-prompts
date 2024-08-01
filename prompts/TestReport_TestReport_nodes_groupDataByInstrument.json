@@ -1,7 +1,0 @@
-{
-  "name": "TestReport_nodes_groupDataByInstrument",
-  "stop_sequence": "#EndOfFunction",
-  "prefix": "",
-  "prompt": "group demoData by instrument sum ask",
-  "completion": "{\"connections\":{\"in\":[\"demoData\",\"out\"]},\"count_column\":\"count\",\"grouping_column_names\":[\"instrument\"],\"name\":\"groupDataByInstrument\",\"node_type\":\"Persistent\",\"operator_type\":\"group\",\"rankings\":[],\"summaries\":[{\"function\":\"sum\",\"name\":\"sumAsk\",\"target_column\":\"ask\"}]}"
-}
