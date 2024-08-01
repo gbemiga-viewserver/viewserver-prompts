@@ -1,5 +1,7 @@
 {
   "name": "TestReport_nodes_filter05",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "priceData2 where open is between 12800 and 12900",
   "completion": "{\"connections\":{\"in\":[\"priceData\",\"out\"]},\"expression\":\"row.high > 8 && row.low < 6\",\"name\":\"filter05\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
 }
