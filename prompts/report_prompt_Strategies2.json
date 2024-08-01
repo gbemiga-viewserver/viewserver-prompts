@@ -1,5 +1,7 @@
 {
   "name": "Strategies2",
+  "stop_sequence": "#EndOfReport",
+  "prefix": "Create a report that",
   "prompt": "",
   "completion": "[\"filter active trades for where open is greater than 1000\",\"segsegseg\"]"
 }
