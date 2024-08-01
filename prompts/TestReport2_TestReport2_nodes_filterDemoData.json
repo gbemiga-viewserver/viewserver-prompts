@@ -1,0 +1,7 @@
+{
+  "name": "TestReport2_nodes_filterDemoData",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
+  "prompt": "filter demoData where open > 0.5",
+  "completion": "{\"connections\":{\"in\":[\"demoData\",\"out\"]},\"expression\":\"row.open > 0.5\",\"name\":\"filterDemoData\",\"node_type\":\"Persistent\",\"operator_type\":\"filter\",\"rust_optimized\":false}"
+}
