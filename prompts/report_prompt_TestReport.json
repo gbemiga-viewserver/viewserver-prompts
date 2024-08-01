@@ -3,5 +3,5 @@
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "selects the top 100 spx usd rows",
-  "completion": "[\"select top 100 spx usd rows\",\"select top 150 usdnok rows\",\"priceData2 where open is between 12800 and 12900\",\"filter spxusd for where high is between 2029 and 2035\"]"
+  "completion": "[\"select top 100 spx usd rows\",\"select top 150 usdnok rows\",\"group PriceDataSPXUSD by open sum close\",\"priceData2 where open is between 12800 and 12900\",\"filter spxusd for where high is between 2029 and 2035\"]"
 }
