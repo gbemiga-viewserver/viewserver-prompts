@@ -1,5 +1,7 @@
 {
   "name": "FxRatesAndCalcs_nodes_finalOutput",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "remove the colun source_name from finalOutputUnion",
   "completion": "{\"columns\":[\"source_name\"],\"connections\":{\"in\":[\"finalOutputUnion\",\"out\"]},\"mode\":\"exclude\",\"name\":\"finalOutput\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
 }
