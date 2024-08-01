@@ -1,5 +1,7 @@
 {
   "name": "Basher2_nodes_GeneralColumns",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
   "prompt": "erhdhdrhdrh",
   "completion": "{\"columns\":[{\"inbound_name\":\"m5_instrument\",\"outbound_names\":[{\"content_type_for_display\":\"Ticker\",\"display_name\":\"Instrument\",\"hidden\":false,\"name\":\"keep_m5_instrument\",\"order\":2,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]},{\"inbound_name\":\"m5_bid\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"Bid\",\"hidden\":false,\"name\":\"keep_m5_bid\",\"order\":3,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]},{\"inbound_name\":\"m5_ask\",\"outbound_names\":[{\"content_type_for_display\":\"Price\",\"display_name\":\"Ask\",\"hidden\":false,\"name\":\"keep_m5_ask\",\"order\":4,\"properties\":{\"category\":\"General\"},\"searchable\":false,\"sortable\":true,\"width\":100}]}],\"connections\":{\"in\":[\"M15ScoreColumns\",\"out\"]},\"mode\":\"project\",\"name\":\"GeneralColumns\",\"node_type\":\"Persistent\",\"operator_type\":\"projection\"}"
 }
