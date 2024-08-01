@@ -1,0 +1,7 @@
+{
+  "name": "TestReport2",
+  "stop_sequence": "#EndOfReport",
+  "prefix": "Create a report that",
+  "prompt": "",
+  "completion": "[\"filter demoData where open > 0.5\",\"group filterDemoData by instrument sum close\"]"
+}
