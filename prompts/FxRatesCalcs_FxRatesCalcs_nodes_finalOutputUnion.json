@@ -1,0 +1,7 @@
+{
+  "name": "FxRatesCalcs_nodes_finalOutputUnion",
+  "stop_sequence": "#EndOfFunction",
+  "prefix": "",
+  "prompt": "union operators finalOutputWithoutUSD with operator calcUSDProjection give the sources names withoutUSD and usd respectively",
+  "completion": "{\"connections\":{\"noUsd\":[\"finalOutputWithoutUSD\",\"out\"],\"usd\":[\"calcUSDProjection\",\"out\"]},\"name\":\"finalOutputUnion\",\"node_type\":\"Persistent\",\"operator_type\":\"union\",\"union_elements\":[{\"additional_columns_per_source\":{},\"source_id\":\"noUsd\"},{\"additional_columns_per_source\":{},\"source_id\":\"usd\"}]}"
+}
