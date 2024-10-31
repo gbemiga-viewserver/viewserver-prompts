@@ -3,5 +3,5 @@
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "",
-  "completion": "[\"transpose data\",\"calc upper and lower bands\",\"calculate range calc\",\"calculate rolling average\"]"
+  "completion": "[\"calc upper and lower bands\",\"transpose data\",\"calculate range calc\",\"calculate rolling average\"]"
 }
