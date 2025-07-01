@@ -1,5 +1,6 @@
 {
   "name": "Mt4AutoTradeBem",
+  "role": "You are a helpful assistant",
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "",
