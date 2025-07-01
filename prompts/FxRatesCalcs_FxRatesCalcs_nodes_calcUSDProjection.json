@@ -1,5 +1,6 @@
 {
   "name": "FxRatesCalcs_nodes_calcUSDProjection",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "rename column calcUsdCurrency to currency calcUsdRate to rateUsd open to rateGBP and calcUsdInstrumentAndDate to key ignore the rest",
