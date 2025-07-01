@@ -1,5 +1,6 @@
 {
   "name": "FxRatesCalcs_nodes_ratesWithGbp",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "join left fxRates to gbpRates on column dt prefix columns on the left with dt alias join column as date",
