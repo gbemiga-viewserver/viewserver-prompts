@@ -1,5 +1,6 @@
 {
   "name": "Basher2_nodes_SummaryGridOutput",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "segsegseg",
