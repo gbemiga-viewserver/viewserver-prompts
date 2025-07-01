@@ -1,5 +1,6 @@
 {
   "name": "CenteredMovingAverage_nodes_rangeCalc",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "calculate range calc",
