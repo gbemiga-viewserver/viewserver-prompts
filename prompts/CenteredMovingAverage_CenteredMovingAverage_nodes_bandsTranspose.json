@@ -1,5 +1,6 @@
 {
   "name": "CenteredMovingAverage_nodes_bandsTranspose",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "transpose data",
