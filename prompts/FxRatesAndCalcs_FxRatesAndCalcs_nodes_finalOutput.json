@@ -1,5 +1,6 @@
 {
   "name": "FxRatesAndCalcs_nodes_finalOutput",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "remove the colun source_name from finalOutputUnion",
