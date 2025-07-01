@@ -1,5 +1,6 @@
 {
   "name": "TestReport_nodes_groupDemoData",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "group filterDemoData by instrument sum open",
