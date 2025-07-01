@@ -1,5 +1,6 @@
 {
   "name": "Mt4AutoTradeBem_nodes_tradingOperator",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "trading operators",
