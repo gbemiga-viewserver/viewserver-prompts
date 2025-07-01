@@ -1,5 +1,6 @@
 {
   "name": "FxRatesAndCalcsBem_nodes_finalOutputWithoutUSD",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "exclude all columns apart from key,currency,rateUSD,rateGBP",
