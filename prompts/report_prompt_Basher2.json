@@ -1,5 +1,6 @@
 {
   "name": "Basher2",
+  "role": "You are a helpful assistant",
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "Basher trading strategy",
