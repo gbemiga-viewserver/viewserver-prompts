@@ -1,5 +1,6 @@
 {
   "name": "DelTestReport_nodes_filterExperttOperator",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "filter filterExperttOperator where bundi greater than baz",
