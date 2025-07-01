@@ -1,5 +1,6 @@
 {
   "name": "TestReport",
+  "role": "You are a helpful assistant",
   "stop_sequence": "#EndOfReport",
   "prefix": "Create a report that",
   "prompt": "selects the top 100 spx usd rows",
