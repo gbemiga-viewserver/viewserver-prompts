@@ -1,5 +1,6 @@
 {
   "name": "DelTestReport_nodes_filterExpertOperator",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "filter export operator where bid is greater than 50",
