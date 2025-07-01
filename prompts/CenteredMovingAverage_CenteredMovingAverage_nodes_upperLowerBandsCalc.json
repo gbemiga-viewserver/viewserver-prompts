@@ -1,5 +1,6 @@
 {
   "name": "CenteredMovingAverage_nodes_upperLowerBandsCalc",
+  "role": null,
   "stop_sequence": "#EndOfFunction",
   "prefix": "",
   "prompt": "calc upper and lower bands",
